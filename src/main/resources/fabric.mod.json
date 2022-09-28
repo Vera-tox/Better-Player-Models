@@ -1,0 +1,41 @@
+{
+  "schemaVersion": 1,
+  "id": "betterplayermodels",
+  "version": "${version}",
+
+  "name": "Better Player Models",
+  "description": "This is an example description!",
+  "authors": [
+    "Vera"
+  ],
+  "contact": {
+    "homepage": "",
+    "sources": ""
+  },
+
+  "license": "MIT License",
+  "icon": "assets/betterplayermodels/icon.png",
+
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "com.vera.betterplayermodels.BetterPlayerModels"
+    ],
+    "client": [
+      "com.vera.betterplayermodels.BetterPlayerModelsClient"
+    ]
+  },
+  "mixins": [
+    "betterplayermodels.mixins.json"
+  ],
+
+  "depends": {
+    "fabricloader": ">=0.14.9",
+    "fabric-api": "*",
+    "minecraft": "~1.19",
+    "java": ">=17"
+  },
+  "suggests": {
+    "another-mod": "*"
+  }
+}
